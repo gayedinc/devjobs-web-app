@@ -237,18 +237,6 @@ a {
   color: #19202D;
 }
 
-.card-top img {
-  position: absolute;
-  top: -25px;
-  left: 142px;
-}
-
-.card img{
-  position: absolute;
-  top: -25px;
-  left: 56px;
-}
-
 .requirements ul, .will-do-section ol {
   list-style: none;
   padding: 0;
@@ -468,6 +456,30 @@ dialog hr {
   color: #6E8098;
 }
 
+.card-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  position: absolute;
+  top: -25px;
+  left: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  position: absolute;
+  top: -25px;
+  left: 139px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Dark Theme */
 
 body.darkMode {
@@ -558,6 +570,10 @@ body.darkMode {
     margin-inline: auto;
   }
 
+  .card-head {
+    padding-left: 148px;
+  }
+
   .show-on-mobile {
     display: none;
   }
@@ -646,33 +662,18 @@ body.darkMode {
 
   .card-top {
     width: 689px;
-    margin-inline: auto;
-    background-color: #fff;
+    max-height: 140px;
     border-radius: 6px;
     padding: 32px;
     text-align: center;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    position: relative;
+    justify-content: space-between;
   }
 
   .card-top a {
     display: flex;
     justify-self: flex-end;
-  }
-
-  .card-top img {
-    position: relative;
-    top: 5px;
-    left: 0px;
-    width: 100%;
-    object-fit: cover;
-  }
-
-  .company-img {
-    width: 140px;
-    height: 140px;
   }
 
   .info-head {
@@ -723,6 +724,28 @@ body.darkMode {
     display: none;
   }
 
+  .card-logo {
+    top: -25px;
+    left: 32px;
+  }
+
+  .detail-logo {
+    width: 140px;
+    height: 140px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+
+  .detail-logo img {
+    width: 81px;
+    height: 23px;
+  }
+
 }
 
 /* Desktop Start */
@@ -755,6 +778,10 @@ body.darkMode {
     border-radius: 6px;
     padding: 32px;
     padding-top: 36px;
+  }
+
+  .card-head {
+    padding-left: 148px;
   }
 
   .card-info {

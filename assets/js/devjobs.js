@@ -42,7 +42,7 @@ async function init() {
 function render(filteredWord) {
   content.innerHTML = filteredWord.map((x) => `
     <div class="card" data-id="${x.id}">
-      <img src="${x.logo}" alt="">
+      <div class="card-logo" style="background-color: ${x.logoBackground};"><img src="${x.logo}" alt=""></div>
       <div class="card-info">
         <span>${x.postedAt} . ${x.contract}</span>
         <h2>${x.position}</h2>
@@ -65,10 +65,14 @@ function render(filteredWord) {
       details.innerHTML = `
         <div class="card-details">
           <div class="card-top">
-            <div class="company-img"><img src="${selectedData.logo}" alt=""></div>
-              <div class="card-head">
-                <h2>${selectedData.company}</h2>
-                <span>${selectedData.company.toLowerCase()}.com</span>
+            <div class="card-left-top">
+                <div class="detail-logo" style="background-color: ${selectedData.logoBackground};">
+                  <img src="${selectedData.logo}" alt="">
+                </div>
+                <div class="card-head">
+                  <h2>${selectedData.company}</h2>
+                  <span>${selectedData.company.toLowerCase()}.com</span>
+                </div>
               </div>
               <a href="https://example.com/scoot">Company Site</a>
           </div>
