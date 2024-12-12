@@ -160,6 +160,7 @@ a {
   padding-block: 24px;
   display: flex;
   flex-direction: column;
+  text-align: left;
 }
 
 .card-head h2 {
