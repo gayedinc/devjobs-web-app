@@ -6,7 +6,7 @@ const searchBtns = document.querySelectorAll('.searchBtn');
 let data = null;
 
 // tema değişikliği için;
-function addNewTime() {
+function changeTheme() {
   if (localStorage.isDarkMode === 'true') {
     document.body.classList.add('darkMode');
     themeChange.checked = true;
@@ -35,7 +35,7 @@ async function init() {
   render(data); // datanın ilk render işlemi
   setupEventListeners(data); // event listenerların hepsi burada kurularak veriler parametre olarak aktarılıyor
   mobilFiltre(); // modal için event listener burada çağrılıyor
-  addNewTime();
+  changeTheme();
 }
 
 // dataların ekrana bastırılması
