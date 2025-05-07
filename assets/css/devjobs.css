@@ -67,6 +67,11 @@ a {
   text-decoration: none;
 }
 
+::selection {
+  background-color: #5964e0;
+  color: #ffffff;
+}
+
 .header {
   background-image: url("../logos/mobil-background.png");
   background-repeat: no-repeat;
